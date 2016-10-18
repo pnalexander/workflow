@@ -1,0 +1,25 @@
+<!-- layout.nunjucks -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!--endbuild-->
+</head>
+<body>
+
+  <!-- You write code for this content block in another file -->
+  <!-- The minus signs are for whitespace control -->
+  {%- block content -%} {%- endblock %}
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <!-- build:js js/main.min.js -->
+    <script type="text/javascript" src="js/one.js"></script>
+    <script type="text/javascript" src="js/two.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

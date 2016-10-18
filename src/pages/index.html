@@ -1,0 +1,17 @@
+<!-- index.html -->
+{%- extends "layout.njk.html" -%}
+
+{% block content %}
+
+<h1>This is the index page</h1>
+<h2>And this is an H2</h2>
+<!-- Adds the navigation partial -->
+{# This is a comment in nunjucks #}
+{# {% include "partials/navigation.html" %} #}
+
+<!-- Importing Nunjucks Macro -->
+{%- import 'macros/nav-macro.html' as nav -%}
+<!-- Creating the navigation with activePage = 'home' -->
+{{nav.active('home')}}
+
+{%- endblock -%}
