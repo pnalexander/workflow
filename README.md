@@ -36,7 +36,7 @@ ADD gulp autoprefixer
 ### Directory Structure ###
 
     |- root/
-      |- core/
+      |- core/ (if using php; soon to be deprecated)
         |- .htaccess
         |- config.inc.php
         |- controller/
@@ -98,7 +98,7 @@ ADD gulp autoprefixer
       gulp
   Default task (used in development, before production/distribution). Spools up browserSync server and opens in browser. Watches files for changes and reloads browserSync when files are changed and saved. Renders full html files from templates, pages, partials, and macros. Compiles Sass into CSS.
 
-  #### _Distribution_ ####
+#### _Distribution_ ####
       gulp build
 
   Build task. Compiles Sass into CSS. Renders complete html files from templates. Optimizes/minifies CSS, JS and images. Cleans dist/ directory. Moves all relevant files, including images and fonts, to dist/ directory, thus creating the packaged project.
