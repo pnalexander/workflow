@@ -3,11 +3,11 @@
 ---
 
 ## Table of Contents ##
-* [Preparing Workflow](#preparing-workflow)
-* [Directory Structure](#directory-structure)
-* [CSS/JS Optimization](#optimization)
-* [Template Engine](#template-engine)
-* [Gulp Tasks](#gulp-tasks)
+1. [Preparing Workflow](#preparing-workflow)
+2. [Directory Structure](#directory-structure)
+3. [CSS/JS Optimization](#optimization)
+4. [Template Engine](#template-engine)
+5. [Gulp Tasks](#gulp-tasks)
 
 ---
 
@@ -95,10 +95,10 @@ ADD gulp autoprefixer
 ### Gulp Tasks ###
 
 #### _Development_ ####
-      gulp
+      $ gulp
   Default task (used in development, before production/distribution). Spools up browserSync server and opens in browser. Watches files for changes and reloads browserSync when files are changed and saved. Renders full html files from templates, pages, partials, and macros. Compiles Sass into CSS.
 
 #### _Distribution_ ####
-      gulp build
+      $ gulp build
 
   Build task. Compiles Sass into CSS. Renders complete html files from templates. Optimizes/minifies CSS, JS and images. Cleans dist/ directory. Moves all relevant files, including images and fonts, to dist/ directory, thus creating the packaged project.

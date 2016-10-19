@@ -5,7 +5,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <!--build:css css/styles.min.css-->
   <link rel="stylesheet" href="css/styles.css">
+  <!--endbuild-->
 </head>
 <body>
 
@@ -25,7 +27,13 @@
   <a href="test.html" class="">Test</a>
   <a href="#" class="">Contact</a>
 </nav>
-<script src="bower_components/jquery/dist/jquery.js"></script>
+
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="js/main.js"></script>
+  <!-- build:js js/main.min.js -->
+    <script type="text/javascript" src="js/one.js"></script>
+    <script type="text/javascript" src="js/two.js"></script>
+  <!-- endbuild -->
 </body>
 </html>

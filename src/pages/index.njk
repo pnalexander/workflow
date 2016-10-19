@@ -1,5 +1,5 @@
 <!-- index.html -->
-{%- extends "layout.njk.html" -%}
+{%- extends "layout.njk" -%}
 
 {% block content %}
 
@@ -7,10 +7,10 @@
 <h2>And this is an H2</h2>
 <!-- Adds the navigation partial -->
 {# This is a comment in nunjucks #}
-{# {% include "partials/navigation.html" %} #}
+{# {% include "partials/navigation.njk" %} #}
 
 <!-- Importing Nunjucks Macro -->
-{%- import 'macros/nav-macro.html' as nav -%}
+{%- import 'macros/nav-macro.njk' as nav -%}
 <!-- Creating the navigation with activePage = 'home' -->
 {{nav.active('home')}}
 

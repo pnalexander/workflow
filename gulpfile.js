@@ -59,7 +59,8 @@ gulp.task('nunjucks', function() {
  return gulp.src('src/pages/**/*.+(html|njk)')
  // Renders template with nunjucks
  .pipe(nunjucksRender({
-     path: ['src/templates']
+     path: ['src/templates'],
+     ext: '.html'
    }))
  // output files in src folder (moved to dist folder for production)
  .pipe(gulp.dest('src'))

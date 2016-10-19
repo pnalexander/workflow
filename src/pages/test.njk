@@ -1,7 +1,7 @@
-{%- extends "layout.njk.html" -%}
+{%- extends "layout.njk" -%}
 {% block content %}
 <p>Testing</p>
 <p>Does it work now?</p>
-{%- import 'macros/nav-macro.html' as nav -%}
+{%- import 'macros/nav-macro.njk' as nav -%}
 {{nav.active('test')}}
 {%- endblock -%}
